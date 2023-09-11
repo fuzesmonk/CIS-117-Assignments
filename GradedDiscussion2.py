@@ -12,11 +12,14 @@ def CompInt(StartAmount: float, IntRate: float, Time: float, TimesPerYear: float
     #print(Time)
     #print(TimesPerYear)
     FracRate = IntRate / 100
+    #print(FracRate)
     Interest = 1 + (FracRate/Time)
-    FinalTotal = float(StartAmount * Interest)
-    FinalTotal = FinalTotal ** TimesPerYear
+    print(f"Interest = {Interest}")
+    IntRate = Interest ** ( TimesPerYear * Time)
+    print(f"Final Interest Rate: {IntRate}")
+    FinalTotal = StartAmount * IntRate
     return FinalTotal
 
 
-result = CompInt(100000, 5, 10, 2)
+result = CompInt(100000, 5, 10, 12)
 print(f"Final Total: {result}")
