@@ -27,16 +27,16 @@ while(done):
         line = 0
         done = False
         for lines in Files:
-            print(lines.rstrip())
-            #lines = lines.rstrip()
-            #isString = set(lines)
-            #if isString.issubset(allowedchars):
-            #    print("True")
-            #    ValidData.update({'lines': line})
-            #    line = line + 1
-            #    print(ValidData)
-            #else:
-            #    print("False")
+            #print(lines.rstrip())
+            lines = lines.rstrip()
+            isString = set(lines)
+            if isString.issubset(allowedchars):
+                #print("True")
+                ValidData.update({lines: line})
+                line = line + 1
+                print(ValidData)
+            else:
+                print("Not a valid string")
             
 
             
