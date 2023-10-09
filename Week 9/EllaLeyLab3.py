@@ -54,6 +54,7 @@ def main():
                 continue
             elif lineCount == numberofLines:
                 print(f"The sum of the data is {DataSum}")
+                FileContent.close()
                 break
             else:
                 continue
