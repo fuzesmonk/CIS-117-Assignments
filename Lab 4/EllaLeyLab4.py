@@ -13,7 +13,21 @@
 
 #A str_ok method that validates the string parameters
 
-class MessageParams:
+
+
+class Message:
+    body = []
+    FinalMessage = ""
+    def str_ok(self, string):
+        StringLength = len(string)
+        if StringLength <= 50:
+#            Diagnostics
+#            print(f"Name: {string}")
+            result = True
+        else:
+            print("Error: End of line expected")
+            result = False
+        return result
     #All the message parameters
     def setSender(self, sender):
         #Who is the message's sender
@@ -24,9 +38,21 @@ class MessageParams:
         self.recipient = recipient
 
     def setBody(self, body):
-        #The main body text of the message
+    #The main body text of the message
         self.body = body
+        Message.body.append(self.body)
 
-message = MessageParams()
+    linecount = 0
+    def appendBody(self, newText):
+        if Message.linecount == 0:
+            self.newText = newText
+#           String Components
+            Message.body.append(self.newText)
+            Message.linecount += 1
+
+        else:
+            self.newText = newText
+            Message.body.append(self.newText)
+        print(f"Appended string = {Message.body}")
 
 
