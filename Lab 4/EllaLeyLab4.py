@@ -16,43 +16,39 @@
 
 
 class Message:
-    body = []
     FinalMessage = ""
     def str_ok(self, string):
         StringLength = len(string)
         if StringLength <= 50:
 #            Diagnostics
 #            print(f"Name: {string}")
-            result = True
+            return True
         else:
             print("Error: End of line expected")
-            result = False
-        return result
+            return False
+
     #All the message parameters
     def setSender(self, sender):
+        if self.str_ok(sender):
         #Who is the message's sender
-        self.sender = sender
+            self.sender = sender
 
     def setRecipient(self, recipient):
+        if self.str_ok(recipient):
         #Who is recieving the message
-        self.recipient = recipient
+            self.recipient = recipient
 
     def setBody(self, body):
+        if self.str_ok(body):
     #The main body text of the message
-        self.body = body
-        Message.body.append(self.body)
+            self.body = body
+            FinalMessage = ""
 
-    linecount = 0
     def appendBody(self, newText):
-        if Message.linecount == 0:
-            self.newText = newText
-#           String Components
-            Message.body.append(self.newText)
-            Message.linecount += 1
+        if self.str_ok(newText):
+            Message.FinalMessage = Message.FinalMessage + newText + '\n'
 
-        else:
-            self.newText = newText
-            Message.body.append(self.newText)
-        print(f"Appended string = {Message.body}")
+    def toString(self):
+        print(Message.FinalMessage)
 
 
