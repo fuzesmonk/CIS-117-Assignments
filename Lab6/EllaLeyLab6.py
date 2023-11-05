@@ -1,22 +1,27 @@
 import datetime
-import urllib
+import requests
 import html.parser
 
-class URL(urllib):
+class URL():
     def Fetcher(self, FetchedURL):
-        print("Fetched URL:", FetchedURL)
-
-class NASParser(html.parser):
-    def handle_starttag(self, tag, attrs):
-        print("Start Tag:", tag)
-    def handle_endtag(self, tag):
-        print("End Tag: ", tag)
-    def DataHandler(self, data):
-        print("Data", data)
+        self.FetchedURL = requests.get(FetchedURL)
+        print("Fetched URL:", self.FetchedURL)
+        return FetchedURL
+    class NASParser():
+        def __init__(self):
+            URLparser = URL()
+        def ServerResponse(self):
+            response = URL.Fetcher()
+        def handle_starttag(self, tag, attrs):
+            print("Start Tag:", tag)
+        def handle_endtag(self, tag):
+            print("End Tag: ", tag)
+        def DataHandler(self, data):
+            print("Data", data)
 
 urlToFetch = URL()
 urlToFetch.Fetcher("https://www.nasonline.org/")
-parser = NASParser()
+parser = urlToFetch.NASParser()
 
 
 
