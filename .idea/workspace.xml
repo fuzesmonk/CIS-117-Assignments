@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4b19e2a-2240-464d-ac37-a1153775d6c3" name="Changes" comment="Started Lab5">
-      <change afterPath="$PROJECT_DIR$/Lab6/EllaLeyLab6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab5/EllaLeyLab5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/EllaLeyLab5.py" afterDir="false" />
+    <list default="true" id="a4b19e2a-2240-464d-ac37-a1153775d6c3" name="Changes" comment="Started Lab6">
+      <change beforePath="$PROJECT_DIR$/Lab6/EllaLeyLab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab6/EllaLeyLab6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698099506470</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Started Lab6">
+      <option name="closed" value="true" />
+      <created>1699218824224</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699218824224</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,6 +221,7 @@
     <MESSAGE value="Work on!!" />
     <MESSAGE value="Finished and submitted Lab 4 awaiting grading" />
     <MESSAGE value="Started Lab5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started Lab5" />
+    <MESSAGE value="Started Lab6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started Lab6" />
   </component>
 </project>

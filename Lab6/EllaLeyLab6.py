@@ -1,12 +1,13 @@
 import datetime
-import urllib
+import urllib.request
 import html.parser
 
-class URL(urllib):
+class URL():
     def Fetcher(self, FetchedURL):
+        FetchedURL = urllib.request.urlopen(FetchedURL)
         print("Fetched URL:", FetchedURL)
 
-class NASParser(html.parser):
+class NASParser():
     def handle_starttag(self, tag, attrs):
         print("Start Tag:", tag)
     def handle_endtag(self, tag):
